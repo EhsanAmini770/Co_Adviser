@@ -1,0 +1,66 @@
+.display-area {
+  /* Other styles... */
+  padding-bottom: 140px; /* Add bottom padding to prevent text from going under the input */
+  display: flex;
+
+  flex-direction: column;
+  
+  
+}
+.display-area ol {
+  padding-left: 20px;
+  list-style-type: decimal;
+  margin-top: 10px; /* Add some space above the list */
+}
+
+.display-area li {
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+/* Style for icons in messages */
+.sentence i.fa-solid, .sentence i.fas {
+  margin-right: 10px;
+  align-self: flex-start;
+}
+
+.sentences-container {
+  /* width: 80%;
+  max-width: 600px; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: flex-start; Align messages to the start (left) */
+  overflow: auto; /* In case of many messages, allow scrolling */
+}
+
+.sentence {
+  display: flex; /* Continue using flexbox */
+  color: rgb(201, 201, 201);
+  align-items: center;
+  margin-top: 20px; /* Space between sentences */
+  max-width: 80%;
+  word-wrap: break-word; /* Ensure long sentences wrap */
+  font-size: 18px;
+}
+
+.sentence i.fa-solid, .sentence i.fas {
+  margin-right: 10px;
+  align-self: flex-start;
+}
+
+/* Add this to your DisplayArea.css */
+.loader {
+  border: 4px solid #f3f3f3; /* Light grey */
+  border-top: 4px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
